@@ -52,21 +52,7 @@
 
     <dependencyManagement>
         <dependencies>
-
-            <!--
-            Libraries to add as dependencies with compile or runtime scope:
-            Find matching dependencies in the maven central repository.
-            <dependency>
-                <groupId>org.other.library</groupId>
-                <artifactId>library-name</artifactId>
-                <version>library.version</version>
-                <scope>compile</scope>
-            </dependency>
-            -->
-
-
             <!-- Begin OpenMRS core -->
-
             <dependency>
                 <groupId>org.openmrs.api</groupId>
                 <artifactId>openmrs-api</artifactId>
@@ -105,12 +91,76 @@
                 <version>${openMRSVersion}</version>
                 <type>pom</type>
                 <scope>test</scope>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.mockito</groupId>
+                        <artifactId>mockito-all</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>org.hamcrest</groupId>
+                        <artifactId>hamcrest-all</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>org.powermock</groupId>
+                        <artifactId>powermock-module-junit4</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>org.powermock</groupId>
+                        <artifactId>powermock-api-mockito</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
-
             <!-- End OpenMRS core -->
 
+            <!-- Test dependencies -->
+            <dependency>
+                <groupId>org.mockito</groupId>
+                <artifactId>mockito-core</artifactId>
+                <version>3.2.4</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.hamcrest</groupId>
+                <artifactId>hamcrest-core</artifactId>
+                <version>2.2</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.powermock</groupId>
+                <artifactId>powermock-module-junit4</artifactId>
+                <version>2.0.4</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.powermock</groupId>
+                <artifactId>powermock-api-mockito2</artifactId>
+                <version>2.0.4</version>
+                <scope>test</scope>
+            </dependency>
         </dependencies>
     </dependencyManagement>
+    <dependencies>
+        <dependency>
+            <groupId>org.hamcrest</groupId>
+            <artifactId>hamcrest-core</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-core</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.powermock</groupId>
+            <artifactId>powermock-module-junit4</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.powermock</groupId>
+            <artifactId>powermock-api-mockito2</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
 
     <build>
         <pluginManagement>
@@ -160,18 +210,18 @@
             </plugins>
         </pluginManagement>
     </build>
-         
+
     <distributionManagement>
-         <repository>
-                  <id>openmrs-repo-modules</id>
-                  <name>OpenMRS Nexus Modules</name>
-                  <url>http://mavenrepo.openmrs.org/nexus/content/repositories/modules</url>
-         </repository>
-         <snapshotRepository>
-                  <id>openmrs-repo-snapshots</id>
-                  <name>OpenMRS Nexus Snapshots</name>
-                  <url>http://mavenrepo.openmrs.org/nexus/content/repositories/snapshots</url>
-         </snapshotRepository>
+        <repository>
+            <id>openmrs-repo-modules</id>
+            <name>OpenMRS Nexus Modules</name>
+            <url>http://mavenrepo.openmrs.org/nexus/content/repositories/modules</url>
+        </repository>
+        <snapshotRepository>
+            <id>openmrs-repo-snapshots</id>
+            <name>OpenMRS Nexus Snapshots</name>
+            <url>http://mavenrepo.openmrs.org/nexus/content/repositories/snapshots</url>
+        </snapshotRepository>
     </distributionManagement>
 
 
