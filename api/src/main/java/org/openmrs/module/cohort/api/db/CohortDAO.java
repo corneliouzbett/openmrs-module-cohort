@@ -17,20 +17,19 @@ import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
-import org.openmrs.Location;
 import org.openmrs.module.cohort.CohortAttribute;
 import org.openmrs.module.cohort.CohortAttributeType;
 import org.openmrs.module.cohort.CohortEncounter;
+import org.openmrs.module.cohort.CohortLeader;
 import org.openmrs.module.cohort.CohortM;
 import org.openmrs.module.cohort.CohortMember;
+import org.openmrs.module.cohort.CohortMemberVisit;
 import org.openmrs.module.cohort.CohortObs;
 import org.openmrs.module.cohort.CohortProgram;
 import org.openmrs.module.cohort.CohortRole;
 import org.openmrs.module.cohort.CohortType;
 import org.openmrs.module.cohort.CohortVisit;
-import org.openmrs.module.cohort.CohortLeader;
 import org.openmrs.module.cohort.api.CohortService;
-import org.openmrs.module.cohort.CohortMemberVisit;
 
 /**
  * Database methods for {@link CohortService}.

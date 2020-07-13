@@ -9,14 +9,12 @@ package org.openmrs.module.cohort.api.db;
  * graphic logo is a trademark of OpenMRS Inc.
  */
 
-
 import java.util.Collection;
 import java.util.Date;
 
 import org.openmrs.EncounterType;
 import org.openmrs.Form;
 import org.openmrs.Location;
-import org.openmrs.Patient;
 import org.openmrs.Provider;
 import org.openmrs.Visit;
 import org.openmrs.VisitType;
@@ -56,7 +54,6 @@ public class EncounterSearchCriteria {
 	/**
 	 * Instead of calling this constructor directly, it is recommended to use {@link EncounterSearchCriteriaBuilder}.
 	 *
-	 * @param patient         the patient the encounter is for
 	 * @param location        the location this encounter took place
 	 * @param fromDate        the minimum date (inclusive) the encounter took place
 	 * @param toDate          the maximum date (exclusive) the encounter took place

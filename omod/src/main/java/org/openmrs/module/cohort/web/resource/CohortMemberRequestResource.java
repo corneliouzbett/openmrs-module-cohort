@@ -1,16 +1,11 @@
 package org.openmrs.module.cohort.web.resource;
 
-import java.util.List;
 import java.util.ArrayList;
-
+import java.util.List;
 
 import org.apache.commons.lang3.StringUtils;
-
-import org.openmrs.Cohort;
 import org.openmrs.Patient;
-import org.openmrs.Person;
 import org.openmrs.api.context.Context;
-import org.openmrs.module.cohort.CohortLeader;
 import org.openmrs.module.cohort.CohortM;
 import org.openmrs.module.cohort.CohortMember;
 import org.openmrs.module.cohort.api.CohortService;

@@ -298,7 +298,7 @@ public class CohortM extends BaseOpenmrsData {
 	 * name, the given name is null, or this cohort has no attributes.
 	 * 
 	 * @param attributeName the name string to match on
-	 * @return CohortAttribute whose {@link CohortAttributeType#getName()} matchs the given name
+	 * @return CohortAttribute whose {@link CohortAttributeType#getName()} matches the given name
 	 *         string
 	 * @should return cohort attribute based on attributeName
 	 * @should return null if AttributeName is voided

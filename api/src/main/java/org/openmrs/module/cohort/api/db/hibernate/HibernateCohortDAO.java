@@ -13,7 +13,6 @@
  */
 package org.openmrs.module.cohort.api.db.hibernate;
 
-import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -33,12 +32,6 @@ import org.hibernate.criterion.Disjunction;
 import org.hibernate.criterion.MatchMode;
 import org.hibernate.criterion.Order;
 import org.hibernate.criterion.Restrictions;
-import org.hibernate.engine.spi.SessionFactoryImplementor;
-import org.hibernate.internal.CriteriaImpl;
-import org.hibernate.internal.SessionImpl;
-import org.hibernate.loader.OuterJoinLoader;
-import org.hibernate.loader.criteria.CriteriaLoader;
-import org.hibernate.persister.entity.OuterJoinLoadable;
 import org.openmrs.PatientIdentifierType;
 import org.openmrs.api.db.hibernate.PatientSearchCriteria;
 import org.openmrs.module.cohort.CohortAttribute;

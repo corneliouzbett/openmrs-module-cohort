@@ -1,11 +1,7 @@
 package org.openmrs.module.cohort;
 
-import java.util.Date;
-
 import org.openmrs.BaseOpenmrsData;
-import org.openmrs.Patient;
 import org.openmrs.Visit;
-import org.openmrs.VisitType;
 
 
 public class CohortMemberVisit extends BaseOpenmrsData {

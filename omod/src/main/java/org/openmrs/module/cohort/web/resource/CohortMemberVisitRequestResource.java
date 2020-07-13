@@ -1,6 +1,5 @@
 package org.openmrs.module.cohort.web.resource;
 
-import org.openmrs.Visit;
 import org.openmrs.api.context.Context;
 import org.openmrs.module.cohort.CohortMemberVisit;
 import org.openmrs.module.cohort.api.CohortService;

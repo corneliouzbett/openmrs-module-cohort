@@ -1,9 +1,10 @@
 package org.openmrs.module.cohort.web.resource;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.commons.lang3.StringUtils;
 import org.openmrs.Location;
 import org.openmrs.api.LocationService;
@@ -28,9 +29,6 @@ import org.openmrs.module.webservices.rest.web.resource.impl.DelegatingResourceD
 import org.openmrs.module.webservices.rest.web.resource.impl.NeedsPaging;
 import org.openmrs.module.webservices.rest.web.response.ResourceDoesNotSupportOperationException;
 import org.openmrs.module.webservices.rest.web.response.ResponseException;
-
-import com.fasterxml.jackson.core.type.TypeReference;
-import com.fasterxml.jackson.databind.ObjectMapper;
 
 @Resource(name = RestConstants.VERSION_1 + CohortRest.COHORT_NAMESPACE + "/cohort", supportedClass = CohortM.class, supportedOpenmrsVersions = {"1.8.*", "1.9.*", "1.10.*", "1.11.*", "1.12.*", "2.0.*", "2.1.*", "2.2.*"})
 public class CohortRequestResource extends DataDelegatingCrudResource<CohortM> {

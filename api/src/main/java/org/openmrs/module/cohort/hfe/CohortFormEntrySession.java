@@ -44,8 +44,6 @@ public class CohortFormEntrySession extends FormEntrySession {
 	
 	private Encounter encounter;
 	
-	private Obs obs;
-	
 	private CohortFormSubmissionActions submissionActions;
 	
 	public CohortFormSubmissionActions getSubmissionActions() {

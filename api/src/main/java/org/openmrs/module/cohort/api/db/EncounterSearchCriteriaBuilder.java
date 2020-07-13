@@ -15,7 +15,6 @@ import java.util.Date;
 import org.openmrs.EncounterType;
 import org.openmrs.Form;
 import org.openmrs.Location;
-import org.openmrs.Patient;
 import org.openmrs.Provider;
 import org.openmrs.Visit;
 import org.openmrs.VisitType;
